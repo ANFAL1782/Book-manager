@@ -1,0 +1,23 @@
+{% extends  'Base.html' %}
+ {%  block title %}
+Books
+ {% endblock %}
+ {%  block Content %}
+ <h1 class="Text-center">Books</h1>
+<hr>
+
+{% for n in Book %}
+<div class="container">
+<h1>{{n.Books_name}}</h1>
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-1 border border-warning rounded color-red">
+    <h1>{{n.Books_name}}</h1>
+    <p>{{n.Books_class}}</p>
+    <p>{{n.Books_Subject}}</p>
+    <p>{{n.Books_Teachers}}</p>
+    <p>{{n.Books_Discription}}</p>
+    
+    
+</div>
+  </div>
+{% endfor %}
+ {% endblock %}
